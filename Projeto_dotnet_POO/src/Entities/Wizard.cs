@@ -9,12 +9,18 @@
 
         public override string Attack()
         {
-            return this.Name + "Lançou Magia";
+            return this.Name + " Lançou Magia";
         }
 
         public string Attack(int Bonus)
         {
-            return this.Name + "Lançou Magia co bonus de ataque"+ Bonus;
+            if (Bonus > 6)
+                return this.Name + "Lançou Magia super efetiva com bonus de " + Bonus;
+            else
+                return this.Name + "Lançou uma magia com força fraca com bonus de " + Bonus;
+
+
+
         }
 
 
